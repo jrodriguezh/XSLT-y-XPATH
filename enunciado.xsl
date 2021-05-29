@@ -39,17 +39,35 @@
                         </tr>
                         <tr>
                             <td>Director</td>
-                            <td><xsl:value-of select="ite/director/nombre"></xsl:value-of></td>
-                            <td><xsl:value-of select="ite/director/despacho"></xsl:value-of></td>
+                            <td>
+                                <xsl:value-of select="ite/director/nombre"></xsl:value-of>
+                            </td>
+                            <td>
+                                <xsl:value-of select="ite/director/despacho"></xsl:value-of>
+                            </td>
                         </tr>
                         <tr>
                             <td>Jefe de estudios</td>
-                            <td><xsl:value-of select="ite/jefe_estudios/nombre"></xsl:value-of></td>
-                            <td><xsl:value-of select="ite/jefe_estudios/despacho"></xsl:value-of></td>
+                            <td>
+                                <xsl:value-of select="ite/jefe_estudios/nombre"></xsl:value-of>
+                            </td>
+                            <td>
+                                <xsl:value-of select="ite/jefe_estudios/despacho"></xsl:value-of>
+                            </td>
                         </tr>
-
-
                     </table>
+                    
+                    <h2>Ciclos impartidos:</h2>
+
+                    <xsl:for-each select="ite/ciclos/ciclo">
+                        <ul>
+                            <li>Ciclo: <xsl:value-of select="@id"></xsl:value-of></li>
+                            <li>Nombre: <xsl:value-of select="nombre"></xsl:value-of></li>
+                            <li>Tipo de grado: <xsl:value-of select="grado"></xsl:value-of></li>
+                            <li>Año: <xsl:value-of select="decretoTitulo/@año"></xsl:value-of></li>
+                        </ul>
+                    </xsl:for-each>
+
 
 
                 </div>
