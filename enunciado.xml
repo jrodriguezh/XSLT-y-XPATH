@@ -1,4 +1,8 @@
-<ite nombre="Instituto Tecnológico Edix" web="https://institutotecnologico.edix.com" >
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="enunciado.xsl" type="text/xsl"?>
+
+
+<ite nombre="Instituto Tecnológico Edix" web="https://institutotecnologico.edix.com">
 
     <empresa>Proeduca</empresa>
 
@@ -6,87 +10,87 @@
 
     <profesores>
 
-                   <profesor>
+        <profesor>
 
-                                   <id>1</id>
+            <id>1</id>
 
-                                   <nombre>Félix</nombre>
+            <nombre>Félix</nombre>
 
-                   </profesor>
+        </profesor>
 
-                   <profesor>
+        <profesor>
 
-                                   <id>2</id>
+            <id>2</id>
 
-                                   <nombre>Raúl</nombre>
+            <nombre>Raúl</nombre>
 
-                   </profesor>
+        </profesor>
 
-                   <profesor>
+        <profesor>
 
-                                   <id>3</id>
+            <id>3</id>
 
-                                   <nombre>Raquel</nombre>
+            <nombre>Raquel</nombre>
 
-                   </profesor>
+        </profesor>
 
-                   <profesor>
+        <profesor>
 
-                                   <id>4</id>
+            <id>4</id>
 
-                                   <nombre>Tomás</nombre>
+            <nombre>Tomás</nombre>
 
-                   </profesor>
+        </profesor>
 
     </profesores>
 
     <director>
 
-                   <nombre>Chon</nombre>
+        <nombre>Chon</nombre>
 
-                   <despacho>Numero 31, 3ª Planta, Edificio A</despacho>
+        <despacho>Numero 31, 3ª Planta, Edificio A</despacho>
 
     </director>
 
     <jefe_estudios>
 
-                   <nombre>Dani</nombre>
+        <nombre>Dani</nombre>
 
-                   <despacho>Numero 27, 2ª Planta, Edificio B</despacho>
+        <despacho>Numero 27, 2ª Planta, Edificio B</despacho>
 
     </jefe_estudios>
 
     <ciclos>
 
-                   <ciclo id="ASIR">
+        <ciclo id="ASIR">
 
-                                   <nombre>Administración de Sistemas Informáticos en Red</nombre>
+            <nombre>Administración de Sistemas Informáticos en Red</nombre>
 
-                                   <grado>Superior</grado>
+            <grado>Superior</grado>
 
-                                   <decretoTitulo año="2009" />
+            <decretoTitulo año="2009" />
 
-                   </ciclo>
+        </ciclo>
 
-                   <ciclo id="DAW">
+        <ciclo id="DAW">
 
-                                   <nombre>Desarrollo de Aplicaciones Web</nombre>
+            <nombre>Desarrollo de Aplicaciones Web</nombre>
 
-                                   <grado>Superior</grado>
+            <grado>Superior</grado>
 
-                                   <decretoTitulo año="2010" />
+            <decretoTitulo año="2010" />
 
-                   </ciclo>
+        </ciclo>
 
-                   <ciclo id="DAM">
+        <ciclo id="DAM">
 
-                                   <nombre>Desarrollo de Aplicaciones Multiplataforma</nombre>
+            <nombre>Desarrollo de Aplicaciones Multiplataforma</nombre>
 
-                                   <grado>Superior</grado>
+            <grado>Superior</grado>
 
-                                   <decretoTitulo año="2010" />
+            <decretoTitulo año="2010" />
 
-                   </ciclo>
+        </ciclo>
 
     </ciclos>
 
