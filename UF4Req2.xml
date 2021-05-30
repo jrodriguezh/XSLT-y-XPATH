@@ -1,24 +1,96 @@
-<?xml version="1.0"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
-<xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes"/>
-    <xsl:template match="/">
-      <tiendas>
-        <!-- 
-            Seleccionamos todos los items que tengan un atributo "type" cuyo valor es
-            "tienda" 
-        -->
-        <xsl:for-each select="productos/item[@type='tienda']">
-          <tienda>
-              <!-- Con la siguiente anotacion creamos un atributo "marca" con el valor del atributo
-                "nombre" dentro de la etiqueta "tienda" -->
-            <xsl:attribute name="marca">
-                <xsl:value-of select="@nombre"/>
-            </xsl:attribute>
-            <identificacion><xsl:value-of select="@producto"/></identificacion>
-            <codigo><xsl:value-of select="@codigo"/></codigo>
-            <precio><xsl:value-of select="@precio"/></precio>
-          </tienda>
-        </xsl:for-each>
-      </tiendas>
-    </xsl:template>
-</xsl:stylesheet>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>   
+<?xml-stylesheet href="/UF4Req2.xsl" type="text/xsl"?>
+
+
+<ite nombre="Instituto Tecnológico Edix" web="https://institutotecnologico.edix.com"> 
+    <empresa>Proeduca</empresa>
+
+    <telefono>+34 91 787 39 91</telefono>
+
+    <profesores>
+
+        <profesor>
+
+            <id>1</id>
+
+            <nombre>Félix</nombre>
+
+        </profesor>
+
+        <profesor>
+
+            <id>2</id>
+
+            <nombre>Raúl</nombre>
+
+        </profesor>
+
+        <profesor>
+
+            <id>3</id>
+
+            <nombre>Raquel</nombre>
+
+        </profesor>
+
+        <profesor>
+
+            <id>4</id>
+
+            <nombre>Tomás</nombre>
+
+        </profesor>
+
+    </profesores>
+
+    <director>
+
+        <nombre>Chon</nombre>
+
+        <despacho>Numero 31, 3ª Planta, Edificio A</despacho>
+
+    </director>
+
+    <jefe_estudios>
+
+        <nombre>Dani</nombre>
+
+        <despacho>Numero 27, 2ª Planta, Edificio B</despacho>
+
+    </jefe_estudios>
+
+    <ciclos>
+
+        <ciclo id="ASIR">
+
+            <nombre>Administración de Sistemas Informáticos en Red</nombre>
+
+            <grado>Superior</grado>
+
+            <decretoTitulo año="2009" />
+
+        </ciclo>
+
+        <ciclo id="DAW">
+
+            <nombre>Desarrollo de Aplicaciones Web</nombre>
+
+            <grado>Superior</grado>
+
+            <decretoTitulo año="2010" />
+
+        </ciclo>
+
+        <ciclo id="DAM">
+
+            <nombre>Desarrollo de Aplicaciones Multiplataforma</nombre>
+
+            <grado>Superior</grado>
+
+            <decretoTitulo año="2010" />
+
+        </ciclo>
+
+    </ciclos>
+
+</ite>
