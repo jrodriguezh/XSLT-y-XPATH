@@ -7,7 +7,7 @@
                 <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
                 <link rel="stylesheet" href="css/enunciado.css" />
-                <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800;900" rel="stylesheet"/>
+                <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800;900" rel="stylesheet" />
                 <title>
                     Instituto Tecnológico Edix
                 </title>
@@ -15,24 +15,31 @@
             <body>
                 <div>
                     <header>
-                        <a href="https://institutotecnologico.edix.com">
-                            <xsl:value-of select="ite/@nombre" />
-                        </a>
-                        
-                        <a href="https://www.grupoproeduca.com">
-                            <xsl:value-of select="ite/empresa" />
-                        </a>
-                        
-                        <a href="tel:">
-                            <xsl:value-of select="ite/telefono"></xsl:value-of>
-                        </a>
-                        
+                        <ul>
+                            <li>
+                                <a href="https://institutotecnologico.edix.com">
+                                    <xsl:value-of select="ite/@nombre" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.grupoproeduca.com">
+                                    <xsl:value-of select="ite/empresa" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tel:">
+                                    <xsl:value-of select="ite/telefono"></xsl:value-of>
+                                </a>
+                            </li>
+                        </ul>
+
                     </header>
 
                     <section>
 
-
-                        <table border="1">
+                        <h2>Datos equipo Edix:</h2>
+                        <br></br>
+                        <table>
                             <tr>
                                 <th>Id Profesor</th>
                                 <th>Nombre</th>
@@ -50,7 +57,7 @@
 
                         </table>
 
-                        <table border="1">
+                        <table>
                             <tr>
                                 <th>Cargo</th>
                                 <th>Nombre</th>
