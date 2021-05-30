@@ -1,22 +1,37 @@
 header{
-    background-color: rgb(39, 199, 146);
+    background: #4CA1AF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #C4E0E5, #4CA1AF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #C4E0E5, #4CA1AF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     height: 100px;
     text-align: center;
     width: 100%;
     margin: 0;
     line-height: 100px;
     color:aliceblue;
+    
 
+}
+
+#formaciones{
+    margin-left: 10%;
 }
 
 nav{
-    height: 25px;
+    height: 30px;
+    text-align: right;
+    background-color: rgb(255, 255, 255);
 }
 
 nav ul li{
-    float: left;
+    float: right;
     list-style: none;
     margin: 10px;
+    line-height: 10px;
+}
+
+.clearfix{
+    clear:both;
 }
 
 body{
@@ -26,20 +41,36 @@ body{
 
 #container{
     width: 100%;
+    height: 100%;
     margin: 0px auto;
+    background: #4CA1AF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #C4E0E5, #4CA1AF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #C4E0E5, #4CA1AF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+section ul li{
+    list-style: none;
 }
 
 aside{
-    display: flexbox;
-    flex-direction: column;
-    margin-top: 50px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    padding: 15px;
+    float: right;
     width: 30%;
+    margin-top: 25px;
 }
 
 section{
     float: left;
     width: 70%;
+}
+
+footer{
+    width: 100%;
+    height: 100%;
+    float: left;
+    text-align: center;
+}
+
+.icono-telefono{
+    width: 30px;
 }

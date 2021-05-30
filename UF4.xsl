@@ -10,25 +10,27 @@
             <div id="container">
                 <header>
                     <h1>Instituto Tecnológico Edix</h1>
-                    <img id="iconoEdix" src="Icon/EdixLogo.png" alt="EdixLogo" title="EdixLogo"/>
                 </header>
 
                 <nav class="menu">
                     <ul>
                         <li>
-                            <a href="UF4.xml">Inicio</a>
-                        </li>
-                        <li>
-                            <a href="UF4.xml">Contacto</a>
+                            <a href="UF4.xml">¿Quienes somos?</a>
                         </li>
                         <li>
                             <a href="UF4.xml">Localización</a>
                         </li>
                         <li>
-                            <a href="UF4.xml">¿Quienes somos?</a>
+                            <a href="UF4.xml">Contacto</a>
+                        </li>
+                        <li>
+                            <a href="UF4.xml">Inicio</a>
                         </li>
                     </ul>
                 </nav>
+
+                <div class="clearfix"></div>
+
                 <section>
                     <div id="formaciones">
                         <h2>Formación Académica</h2>
