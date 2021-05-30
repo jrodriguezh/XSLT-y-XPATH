@@ -20,15 +20,15 @@
 
                 <director>
                     <nombre><xsl:value-of select="ite/director/nombre"/></nombre>
-                    <despacho><xsl:value-of select="ite/director/despacho"/></despacho>
+                    <localizacion><xsl:value-of select="ite/director/despacho"/></localizacion>
                 </director>
                 <jefe_estudios>
                     <nombre><xsl:value-of select="ite/jefe_estudios/nombre"/></nombre>
-                    <despacho><xsl:value-of select="ite/jefe_estudios/despacho"/></despacho>
+                    <localizacion><xsl:value-of select="ite/jefe_estudios/despacho"/></localizacion>
                 </jefe_estudios>
             </personal>
            
-            
+
             <grados>
 
                 <grado>
@@ -36,7 +36,7 @@
                         <nombre><xsl:value-of select="nombre"/></nombre>
                         <id><xsl:value-of select="@id"/></id>
                         <grado><xsl:value-of select="grado"/></grado>
-                        <decreto><xsl:value-of select="decretoTitulo/@año"/></decreto>
+                        <decreto><xsl:value-of select="decretoTitulo/@ano"/></decreto>
                     </xsl:for-each>
 
                 </grado>
