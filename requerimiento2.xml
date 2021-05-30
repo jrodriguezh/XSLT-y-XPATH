@@ -1,86 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
-    <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes" />
+<?xml-stylesheet href="requerimiento2.xsl" type="text/xsl"?>
+<?xml-stylesheet href="css/enunciado.css" type="text/css"?>
 
 
-    <xsl:template match="/">
-        <ite>
+<ite nombre="Instituto Tecnológico Edix" web="https://institutotecnologico.edix.com">
 
-            <datosIte>
-                <nombre>
-                    <xsl:value-of select="ite/@nombre" />
-                </nombre>
-                <web>
-                    <xsl:value-of select="ite/@web" />
-                </web>
-                <empresa>
-                    <xsl:value-of select="ite/empresa" />
-                </empresa>
-                <telefono>
-                    <xsl:value-of select="ite/telefono" />
-                </telefono>
+    <empresa>Proeduca</empresa>
 
-            </datosIte>
+    <telefono>+34 91 787 39 91</telefono>
 
-            <trabajadores>
-                <profesor>
-                    <xsl:for-each select="ite/profesores/profesor">
+    <profesores>
 
-                        <nombre>
-                            <xsl:value-of select="nombre" />
-                        </nombre>
-                        <id>
-                            <xsl:value-of select="id" />
-                        </id>
+        <profesor>
 
-                    </xsl:for-each>
+            <id>1</id>
 
-                </profesor>
+            <nombre>Félix</nombre>
 
-                <director>
-                    <nombre>
-                        <xsl:value-of select="ite/director/nombre" />
-                    </nombre>
-                    <despacho>
-                        <xsl:value-of select="ite/director/despacho" />
-                    </despacho>
-                </director>
-                <jefe_estudios>
-                    <nombre>
-                        <xsl:value-of select="ite/jefe_estudios/nombre" />
-                    </nombre>
-                    <despacho>
-                        <xsl:value-of select="ite/jefe_estudios/despacho" />
-                    </despacho>
-                </jefe_estudios>
-            </trabajadores>
-            <estudios>
+        </profesor>
 
-                <ciclo>
-                    <xsl:for-each select="ite/ciclos/ciclo">
-                        <nombre>
-                            <xsl:value-of select="nombre" />
-                        </nombre>
-                        <abreviatura>
-                            <xsl:value-of select="@id" />
-                        </abreviatura>
-                        <grado>
-                            <xsl:value-of select="grado" />
-                        </grado>
-                        <añoDecreto>
-                            <xsl:value-of select="decretoTitulo/@año" />
-                        </añoDecreto>
-                    </xsl:for-each>
+        <profesor>
 
-                </ciclo>
+            <id>2</id>
 
-            </estudios>
+            <nombre>Raúl</nombre>
 
+        </profesor>
 
-        </ite>
+        <profesor>
 
+            <id>3</id>
 
-    </xsl:template>
+            <nombre>Raquel</nombre>
 
+        </profesor>
 
-</xsl:stylesheet>
+        <profesor>
+
+            <id>4</id>
+
+            <nombre>Tomás</nombre>
+
+        </profesor>
+
+    </profesores>
+
+    <director>
+
+        <nombre>Chon</nombre>
+
+        <despacho>Numero 31, 3ª Planta, Edificio A</despacho>
+
+    </director>
+
+    <jefe_estudios>
+
+        <nombre>Dani</nombre>
+
+        <despacho>Numero 27, 2ª Planta, Edificio B</despacho>
+
+    </jefe_estudios>
+
+    <ciclos>
+
+        <ciclo id="ASIR">
+
+            <nombre>Administración de Sistemas Informáticos en Red</nombre>
+
+            <grado>Superior</grado>
+
+            <decretoTitulo ano="2009" />
+
+        </ciclo>
+
+        <ciclo id="DAW">
+
+            <nombre>Desarrollo de Aplicaciones Web</nombre>
+
+            <grado>Superior</grado>
+
+            <decretoTitulo ano="2010" />
+
+        </ciclo>
+
+        <ciclo id="DAM">
+
+            <nombre>Desarrollo de Aplicaciones Multiplataforma</nombre>
+
+            <grado>Superior</grado>
+
+            <decretoTitulo ano="2010" />
+
+        </ciclo>
+
+    </ciclos>
+
+</ite>

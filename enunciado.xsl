@@ -13,7 +13,9 @@
             </head>
             <body>
                 <div>
-                    
+
+                    <a href="https://institutotecnologico.edix.com"><xsl:value-of select="ite/@nombre"/></a>
+                    <br></br>
                     <a href="https://www.grupoproeduca.com"><xsl:value-of select="ite/empresa"/></a>
                     <br></br>
                     <a href="tel:"><xsl:value-of select="ite/telefono"></xsl:value-of></a>
