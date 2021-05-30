@@ -8,8 +8,29 @@
         </head>
         <body>
             <div id="container">
+                <header>
+                    <h1>Instituto Tecnológico Edix</h1>
+                    <img id="iconoEdix" src="Icon/EdixLogo.png" alt="EdixLogo" title="EdixLogo"/>
+                </header>
+
+                <nav class="menu">
+                    <ul>
+                        <li>
+                            <a href="UF4.xml">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="UF4.xml">Contacto</a>
+                        </li>
+                        <li>
+                            <a href="UF4.xml">Localización</a>
+                        </li>
+                        <li>
+                            <a href="UF4.xml">¿Quienes somos?</a>
+                        </li>
+                    </ul>
+                </nav>
                 <section>
-                    <article id="article">
+                    <div id="formaciones">
                         <h2>Formación Académica</h2>
                         <xsl:for-each select="ite/ciclos/ciclo">
                     <ul>
@@ -21,8 +42,13 @@
                     </ul>
                         </xsl:for-each>
 
-                    </article> 
+                    </div>
+                    <div class="formulario">
+
+                    </div>
                 </section>
+
+
                 <aside>
                         <table>
                             <tr>
@@ -56,11 +82,18 @@
                         </table>
                 </aside>
             
-        
+
                 <footer>
-                    <a href="https://www.grupoproeduca.com"><xsl:value-of select="ite/empresa"/></a>
-                    <a href="tel:+34 91 787 39 91"><xsl:value-of select="ite/telefono"/></a>
+                    <div class="containerfooter">
+                        <div class= "column1">
+                            <a href="https://www.grupoproeduca.com"><xsl:value-of select="ite/empresa"/></a>
+                        </div>
+                        <div class="column2">    
+                            <a href="tel:+34 91 787 39 91"><xsl:value-of select="ite/telefono"/></a>
+                        </div>
+                    </div>
                 </footer>
+
             </div>
         </body>
     </html>
