@@ -21,7 +21,7 @@
                             <a href="UF4.xml">Localización</a>
                         </li>
                         <li>
-                            <a href="UF4.xml">Contacto</a>
+                            <a href="formulario.html">Contacto</a>
                         </li>
                         <li>
                             <a href="UF4.xml">Inicio</a>

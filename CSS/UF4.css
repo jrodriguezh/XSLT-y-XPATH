@@ -51,12 +51,14 @@ body{
 
 section ul li{
     list-style: none;
+
 }
 
 aside{
     float: right;
     width: 30%;
     margin-top: 25px;
+    
 }
 
 section{
@@ -69,8 +71,4 @@ footer{
     height: 100%;
     float: left;
     text-align: center;
-}
-
-.icono-telefono{
-    width: 30px;
 }
