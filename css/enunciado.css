@@ -11,13 +11,11 @@ div{
     
 }
 
-table{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-content: center;
+aside{
+    float: left;
+
 }
 
 a{
     color: rgb(2, 2, 2);
 }
-
