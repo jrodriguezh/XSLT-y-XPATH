@@ -7,6 +7,7 @@
                 <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
                 <link rel="stylesheet" href="css/enunciado.css" />
+                <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800;900" rel="stylesheet"/>
                 <title>
                     Instituto Tecnológico Edix
                 </title>
@@ -17,14 +18,15 @@
                         <a href="https://institutotecnologico.edix.com">
                             <xsl:value-of select="ite/@nombre" />
                         </a>
-                        <br></br>
+                        
                         <a href="https://www.grupoproeduca.com">
                             <xsl:value-of select="ite/empresa" />
                         </a>
-                        <br></br>
+                        
                         <a href="tel:">
                             <xsl:value-of select="ite/telefono"></xsl:value-of>
                         </a>
+                        
                     </header>
 
                     <section>
