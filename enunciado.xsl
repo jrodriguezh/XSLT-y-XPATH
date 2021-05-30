@@ -12,7 +12,11 @@
             </head>
             <body>
                 <div>
-
+                    
+                    <a href="https://www.grupoproeduca.com"><xsl:value-of select="ite/empresa"/></a>
+                    <br></br>
+                    <a href="tel:"><xsl:value-of select="ite/telefono"></xsl:value-of></a>
+                    
                     <table border="1">
                         <tr>
                             <th>Id Profesor</th>
@@ -68,6 +72,9 @@
                         </ul>
                     </xsl:for-each>
 
+
+                    <a href="formulario.html">Formulario de contacto</a>
+                    
 
 
                 </div>
